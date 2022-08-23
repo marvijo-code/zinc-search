@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'zinc-search'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_29C3ECE26A37461EB359A6AD94850BA4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9299660AC572420AA4AFF83BA098A45D }}
           package: .
