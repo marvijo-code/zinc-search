@@ -25,6 +25,8 @@ jobs:
       - name: Change CWD
         run: cd web
         
+      - run: ls -al
+        
       - name: npm install, build, and test
         run: |
           npm install
