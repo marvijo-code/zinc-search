@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
 
     steps:
       - name: Checkout code
@@ -22,9 +25,6 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Change CWD
-        run: cd web
-        
       - run: ls -al
         
       - name: npm install, build, and test
