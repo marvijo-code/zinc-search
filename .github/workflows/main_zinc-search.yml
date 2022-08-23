@@ -22,6 +22,9 @@ jobs:
         with:
           node-version: '16.x'
 
+      - name: Change CWD
+        run: cd web
+        
       - name: npm install, build, and test
         run: |
           npm install
